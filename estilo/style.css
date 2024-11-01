@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, html{
+    background-color: hsl(148, 38%, 91%);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+section{
+    width: 375px ;
+
+    background: white;
+}
