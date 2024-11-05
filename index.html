@@ -22,41 +22,46 @@
       
       <form action="doc.php" method="post">
         
-        <label for="name1">First Name</label>
-        <input type="text" name="name1" id="name1" required>
+        <label for="name1">First Name <span>*</span></label>
+        <input type="text" name="name1" id="name1" class="inp" required>
         <!--This field is required-->
 
-        <label for="name2">Last Name</label>
-        <input type="text" name="name2" id="name2" required>
+        <label for="name2">Last Name <span>*</span></label>
+        <input type="text" name="name2" id="name2"  class="inp"  required>
         <!--This field is required-->
 
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email" required>
+        <label for="email">Email Address <span>*</span></label>
+        <input type="email" name="email" id="email"  class="inp"  required>
         <!--Please enter a valid email address-->
         <!--This field is required-->
 
-        <legend>Query Type</legend>
+        <legend>Query Type <span>*</span></legend>
 
-        <label for="geral">General Enquiry</label>
-        <input type="radio" name="query" id="geral" required>
+        <div class="radio-contain">
+          <input type="radio" name="query" id="geral" class="inp-radio" required>
+          <label for="geral" class="lab-radio" >General Enquiry </label>
+        </div>
 
-        <label for="suporte">Support Request</label>
-        <input type="radio" name="query" id="suporte" required>
-        <!--Please select a query type
-        Message-->
+        <div class="radio-contain">
+          <input type="radio" name="query" id="suporte" class="inp-radio" required>
+          <label for="suporte" class="lab-radio" >Support Request </label>
+        </div>
+        <!--Please select a query type Message-->
 
        <!--This field is required-->
 
        
-       <label for="msg">Message Sent!</label>
-       <textarea name="msg" id="msg"></textarea>
+       <label for="msg">Message <span>*</span></label>
+       <textarea name="msg" id="msg" height="200"></textarea>
        <!--Thanks for completing the form. We'll be in touch soon!-->
        
-       <input type="checkbox" name="consent" id="consent">
-         I consent to being contacted by the team
-        </input>
-        <!--To submit this form, please consent to being contacted
-        Submit-->
+       <div class="check-contain">
+         <input type="checkbox" name="consent" id="consent"  >
+         <p class="check">I consent to being contacted by <br> the team</p>
+          <!--To submit this form, please consent to being contacted
+          Submit-->
+       </div>
+
         <input type="submit" value="submit">
       </form>
 
