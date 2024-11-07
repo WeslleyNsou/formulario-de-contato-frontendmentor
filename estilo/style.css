@@ -13,7 +13,7 @@ body, html, main{
     background-color: hsl(148, 38%, 91%);
 
     width: 96vw;
-    height: 100vh;
+    height: 120vh;
 }
 
 section{
@@ -143,4 +143,8 @@ div.radio-contain{
     background-color: hsl(148, 38%, 91%);
     color:hsl(187, 24%, 22%)
     ;
+}
+
+footer{
+    padding: 20px;
 }
