@@ -91,8 +91,14 @@ div.radio-contain{
     color: hsl(186, 15%, 59%);
     margin-left: 10px;
 }
-.inp-radio:active{
-    background-color:hsl(186, 15%, 59%)  ;
+.lab-radio:active{
+    background-color:hsl(186, 52%, 53%) ;
+}
+.inp-radio :checked{
+    background-color:hsl(186, 52%, 53%)  ;
+}
+div.radio-contain:active{
+    background-color:hsl(186, 52%, 53%)  ;
 }
 #msg{
     display: block;
