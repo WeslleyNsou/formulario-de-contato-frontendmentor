@@ -16,25 +16,28 @@
       <h1>Contact Us</h1>
       <form>
         <div class="inp-txt">
-          <label for="fname" class="resquired">First Name</label>
+          <label for="fname" class="resquired">First Name <span>*</span></label>
           <input type="text" id="fname" name="fname">
           <small> This field is required</small>
         </div>
+
         <div class="inp-txt">
-          <label for="lname" class="required">Last Name</label>
+          <label for="lname" class="required">Last Name <span>*</span></label>
           <input type="text" id="lname" name="lname">
           <small> This field is required</small>
         </div>
+
         <div class="inp-txt">
           <!--Please enter a valid email address-->
-          <label for="email" class="required">Email Address</label>
+          <label for="email" class="required">Email Address <span>*</span></label>
           <input type="email" id="email" name="email">
           <small> This field is required</small>
         </div>
 
         <div class="inp-radio">
-          <legend class="required">Query Type</legend>
+          <legend class="required">Query Type <span>*</span></legend>
           <!--Please select a query type-->
+
           <div class="rad-contain">
             <input type="radio" id="general" name="query">
             <label for="general">General Enquiry</label>
@@ -46,8 +49,8 @@
         </div>
 
         <div class="msg-contain"> 
-          <legend class="required">Message</legend>
-          <textarea name="msg" id="msg"></textarea>
+          <legend class="required">Message <span>*</span></legend>
+          <input type="text" id="msg" name="msg">
           <small>This field is required</small>
         </div>
 
