@@ -14,23 +14,23 @@
   <main>
     <section>
       <h1>Contact Us</h1>
-      <form>
+      <form id="form">
         <div class="inp-txt">
-          <label for="fname" class="resquired">First Name <span>*</span></label>
-          <input type="text" id="fname" name="fname">
+          <label for="fname">First Name <span>*</span></label>
+          <input type="text" id="fname" name="fname" class="resquired">
           <small> This field is required</small>
         </div>
 
         <div class="inp-txt">
-          <label for="lname" class="required">Last Name <span>*</span></label>
-          <input type="text" id="lname" name="lname">
+          <label for="lname">Last Name <span>*</span></label>
+          <input type="text" id="lname" name="lname" class="required">
           <small> This field is required</small>
         </div>
 
         <div class="inp-txt">
           <!--Please enter a valid email address-->
-          <label for="email" class="required">Email Address <span>*</span></label>
-          <input type="email" id="email" name="email">
+          <label for="email" >Email Address <span>*</span></label>
+          <input type="email" id="email" name="email" class="required">
           <small> This field is required</small>
         </div>
 
@@ -56,10 +56,10 @@
 
         <div class="check-contain">
           <input type="checkbox" id="check" name="check">
-          <label for="check" class="required">I consent to being contacted by the team</label>
+          <label for="check" class="required">I consent to being contacted by the team <span>*</span></label>
         </div>
 
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Submit" id="submit">
       </form>
     </section>
   </main>
@@ -69,5 +69,7 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </footer>
+
+<script src="botton.js"></script>
 </body>
 </html>

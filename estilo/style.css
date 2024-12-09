@@ -11,8 +11,8 @@
 }
 
 body, main{
-    width: 100vw;
-    height: 100vh;
+    width: 96vw;
+    height: auto;
     background-color: hsl(148, 38%, 91%);
 }
 
@@ -23,10 +23,12 @@ body, main{
  }
 section{
     width: 90%;
-    height: 90%;
+    height: 910px;
    
     border-radius: 20px;
     background-color: white;
+
+    margin: 30px;
 }
 h1{
     margin: 20px;
@@ -109,6 +111,61 @@ legend > span{
     height: 200px;
 
     border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 10px; 
+}
+
+.check-contain{
+    position: relative;
+    margin: 20px;
+}
+.check-contain > label{
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    padding-left: 25px ;
+    color: hsl(186, 15%, 59%);
+}
+.check-contain > label > span{
+    color: hsl(169, 82%, 27%);
+}
+.check-contain > input{
+    position: absolute;
+    bottom: 0.5%;
+    width: 20px;
+    height: 20px;
+    color: hsl(186, 15%, 59%);
+    accent-color: hsl(169, 82%, 27%);
+}
+
+#submit{
+    display: block;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+
     border-radius: 10px;
-    
+    border: none;
+
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+footer{
+    padding: 20px;
+}
+
+/*Erro Sucesso*/
+small{
+    visibility: hidden;
+    color: red;
+}
+.resquired.erro {
+    border: red 1px solid;
+}
+.required.sucesso{
+    border:  hsl(169, 82%, 27%) 1px solid;
 }
