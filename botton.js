@@ -15,6 +15,6 @@ function checkinputs(){
     const email = email.value
 
     if(fname.value === ''){
-        alert('digite seu nome')
+        alert("digite seu nome");
     }
 }
