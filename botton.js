@@ -1,20 +1,34 @@
-const form = document.getElementById('form')
-const fname = document.getElementById('fname')
-const lname = document.getElementById('lname')
-const email = document.getElementById('email')
-
-form.addEventListener('submit', (e) =>{
-    e.preventDefault();
-
-    checkinputs();
-})
+var Fname = document.getElementById('fname')
+var Lname = document.getElementById('lname')
+var Email = document.getElementById('email')
+//Query Type
+var General = document.getElementById('general')
+var Support = document.getElementById('support')
 
 function checkinputs(){
-    const fname = fname.value
-    const lname = lname.value
-    const email = email.value
+    var FnameValue = Fname.value;
+    var LnameValue = Lname.value;
+    var EmailValue = Email.value;
+    //Query Type
+    var GeneralValue = General.value;
+    var SupportValue = Support.value;
 
-    if(fname.value === ''){
-        alert("digite seu nome");
+   
+ 
+    function {
+        var opcoes = getElementByName('query')
+        var opcoesselecionadas = null
+
+        for (var i = 0; i < opcoes.length; i++){
+            if(opcoes[i].checked){
+                opcoesselecionadas = opcoes[i].value;
+                break;
+            }
+        }
+        if(opcoesselecionadas){
+            alert('opcao selecionada:' + opcoesselecionadas)
+        }else{
+            alert('nenhuma opcao celecionada')
+        }
     }
 }
